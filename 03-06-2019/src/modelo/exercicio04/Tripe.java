@@ -88,6 +88,7 @@ public class Tripe {
     public void usar(){
         if(prontoParaUsar()){
             System.out.println("Então usa, porra!");
+            System.out.println("s2");
         } else {
             System.out.println("Não dá pra usar não essa caralha!");
         }
