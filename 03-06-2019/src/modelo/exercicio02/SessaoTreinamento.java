@@ -2,7 +2,7 @@ package modelo.exercicio02;
 
 public class SessaoTreinamento {
 
-    private int experiencia;
+    private int experiencia = 1;
 
     public int getExperiencia() {
         return experiencia;
@@ -13,11 +13,11 @@ public class SessaoTreinamento {
     }
 
     public void treinarA(JogadorDeFutebol jogador){
+        System.out.println("Experiência inicial de: " + jogador.getExperiencia());
         jogador.correr();
         jogador.fazerGol();
         jogador.correr();
-
-        jogador.setExperiencia(getExperiencia() + 1);
-        
+        jogador.setExperiencia(jogador.getExperiencia() + this.experiencia);
+        System.out.println("Experiência final de: " + jogador.getExperiencia());
     }
 }

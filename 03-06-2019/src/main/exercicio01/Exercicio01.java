@@ -2,7 +2,7 @@ package main.exercicio01;
 import modelo.exercicio01.Cliente;
 import modelo.exercicio01.Conta;
 
-public class Main {
+public class Exercicio01 {
 
     public static void main(String[] args) {
 
@@ -12,6 +12,7 @@ public class Main {
         System.out.println("Saldo atual: "+conta01.getSaldo());
         conta01.deposito(400.00);
         System.out.println("Saldo após depósito "+conta01.getSaldo());
+        System.out.println(conta01.getTitular().getNome());
 
         conta01.saque(200.50);
         System.out.println("Saldo após saque: "+conta01.getSaldo());

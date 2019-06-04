@@ -12,102 +12,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Conta.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Conta.java">
+      <file leaf-file-name="Tripe.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modelo/exercicio04/Tripe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="46" column="69" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
+            <state relative-caret-position="119">
+              <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
               <folding>
-                <element signature="e#175#176#0" expanded="true" />
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Cliente.java">
+      <file leaf-file-name="Exercicio04.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/exercicio04/Exercicio04.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-              <folding>
-                <element signature="e#155#156#0" expanded="true" />
-                <element signature="e#187#188#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#317#318#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/exercicio01/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JogadorDeFutebol.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/JogadorDeFutebol.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1201">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
-              <folding>
-                <element signature="e#195#196#0" expanded="true" />
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#578#579#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessaoTreinamento.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/SessaoTreinamento.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-              <folding>
-                <element signature="e#125#126#0" expanded="true" />
-                <element signature="e#159#160#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -135,11 +73,18 @@
         <option value="$PROJECT_DIR$/src/modelo/exercicio01/Conta.java" />
         <option value="$PROJECT_DIR$/src/main/exercicio01/Main.java" />
         <option value="$PROJECT_DIR$/src/modelo/exercicio02/JogadorDeFutebol.java" />
+        <option value="$PROJECT_DIR$/src/main/exercicio02/Exercicio02.java" />
+        <option value="$PROJECT_DIR$/src/modelo/exercicio03/Atleta.java" />
         <option value="$PROJECT_DIR$/src/modelo/exercicio02/SessaoTreinamento.java" />
+        <option value="$PROJECT_DIR$/src/main/exercicio03/Exercicio03.java" />
+        <option value="$PROJECT_DIR$/src/modelo/exercicio03/Prova.java" />
+        <option value="$PROJECT_DIR$/src/modelo/exercicio04/Exercicio04.java" />
+        <option value="$PROJECT_DIR$/src/modelo/exercicio04/Tripe.java" />
+        <option value="$PROJECT_DIR$/src/main/exercicio04/Exercicio04.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -149,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,29 +118,24 @@
               <item name="03-06-2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="exercicio01" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicio04" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="03-06-2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="03-06-2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="modelo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="03-06-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="03-06-2019" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modelo" type="462c0819:PsiDirectoryNode" />
-              <item name="exercicio02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../04-06-2019" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,13 +149,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.exercicio01.Main" />
+  <component name="RunManager" selected="Application.Exercicio04">
+    <configuration name="Exercicio01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.exercicio01.Exercicio01" />
       <module name="03-06-2019" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.exercicio01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Exercicio02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.exercicio02.Exercicio02" />
+      <module name="03-06-2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.exercicio02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Exercicio03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.exercicio03.Exercicio03" />
+      <module name="03-06-2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.exercicio03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Exercicio04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.exercicio04.Exercicio04" />
+      <module name="03-06-2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.exercicio04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,11 +199,17 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Exercicio01" />
+      <item itemvalue="Application.Exercicio02" />
+      <item itemvalue="Application.Exercicio03" />
+      <item itemvalue="Application.Exercicio04" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Exercicio04" />
+        <item itemvalue="Application.Exercicio03" />
+        <item itemvalue="Application.Exercicio02" />
+        <item itemvalue="Application.Exercicio01" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -251,7 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -262,24 +239,24 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.28616852" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.20667727" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26866764" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3990461" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -287,34 +264,212 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lista/src/modelo/Cliente.java">
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Conta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="629">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lista/src/modelo/Conta.java">
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="289">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lista/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/JogadorDeFutebol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state relative-caret-position="901">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/SessaoTreinamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/exercicio01/Exercicio01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Conta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="46" column="69" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/exercicio01/Exercicio01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/JogadorDeFutebol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/SessaoTreinamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lista/src/modelo/Cliente.java" />
+    <entry file="file://$PROJECT_DIR$/lista/src/modelo/Conta.java" />
+    <entry file="file://$PROJECT_DIR$/lista/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/exemplo/MainAnimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Conta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/exercicio01/Exercicio01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/JogadorDeFutebol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/SessaoTreinamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="76" lean-forward="true" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/exercicio02/Exercicio02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="6" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio03/Atleta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio03/Prova.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding>
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/exercicio03/Exercicio03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modelo/exemplo/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
+        <state relative-caret-position="237">
           <caret line="47" column="25" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="47" selection-end-column="25" />
           <folding>
             <element signature="e#150#151#0" expanded="true" />
@@ -329,99 +484,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/exemplo/MainAnimal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/exercicio04/Exercicio04.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Cliente.java">
+    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio04/Tripe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="119">
+          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
           <folding>
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio01/Conta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="46" column="69" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
-          <folding>
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/exercicio01/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/JogadorDeFutebol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1201">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/exercicio02/SessaoTreinamento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
           </folding>
         </state>
       </provider>
