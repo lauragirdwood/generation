@@ -18,17 +18,21 @@ public class Exercicio03 {
         fofao.setEnergia(9);
         fofao.setNivel(8);
 
-        System.out.println(belo.getNome());
-        System.out.println(fofao.getNome());
+        Prova ciclismo = new Prova(5, 10);
+        Prova salto = new Prova(9,9);
+        Prova corrida = new Prova(20, 30);
 
-        Prova prova1 = new Prova(5, 10);
-        Prova prova2 = new Prova(9,9);
+        // Belo
+        ciclismo.podeRealizar(belo);
+        salto.podeRealizar(belo);
+        corrida.podeRealizar(belo);
 
-        prova1.podeRealizar(belo);
-        prova2.podeRealizar(fofao);
+        // Fofao
+        salto.podeRealizar(fofao);
+        ciclismo.podeRealizar(fofao);
+        corrida.podeRealizar(fofao);
 
-        prova1.podeRealizar(fofao);
-        prova2.podeRealizar(belo);
+
 
 
     }

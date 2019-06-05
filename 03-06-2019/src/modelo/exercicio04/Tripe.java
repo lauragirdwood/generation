@@ -3,10 +3,11 @@ package modelo.exercicio04;
 public class Tripe {
 
     private boolean dobrado;
-    private int alturaMinima;
-    private int alturaMaxima;
-    private int alturaAtual;
+    private double alturaMinima;
+    private double alturaMaxima;
+    private double alturaAtual;
 
+    // Setters & Getters
     public boolean isDobrado() {
         return dobrado;
     }
@@ -15,70 +16,76 @@ public class Tripe {
         this.dobrado = dobrado;
     }
 
-    public int getAlturaMinima() {
+    public double getAlturaMinima() {
         return alturaMinima;
     }
 
-    public void setAlturaMinima(int alturaMinima) {
+    public void setAlturaMinima(double alturaMinima) {
         this.alturaMinima = alturaMinima;
     }
 
-    public int getAlturaMaxima() {
+    public double getAlturaMaxima() {
         return alturaMaxima;
     }
 
-    public void setAlturaMaxima(int alturaMaxima) {
+    public void setAlturaMaxima(double alturaMaxima) {
         this.alturaMaxima = alturaMaxima;
     }
 
-    public int getAlturaAtual() {
+    public double getAlturaAtual() {
         return alturaAtual;
     }
 
-    public void setAlturaAtual(int alturaAtual) {
+    public void setAlturaAtual(double alturaAtual) {
         this.alturaAtual = alturaAtual;
     }
 
-    public void definirAltura(int novaAltura) {
+    // Construtores
+    public Tripe() {
+    }
+
+    public Tripe(boolean dobrado, double alturaMinima, double alturaMaxima, double alturaAtual) {
+        this.dobrado = dobrado;
+        this.alturaMinima = alturaMinima;
+        this.alturaMaxima = alturaMaxima;
+        this.alturaAtual = alturaAtual;
+    }
+
+    // Métodos
+    public void definirAltura(double novaAltura) {
         this.alturaAtual = novaAltura;
     }
 
+    // MENOS É MAIS !!!!
     public void dobrar() {
-        if (!isDobrado()){
+        //if (!isDobrado()){
             this.dobrado = true;
-            if (alturaAtual != alturaMinima) {
-                this.alturaAtual = this.alturaMinima;
-            }
+           // if (alturaAtual != alturaMinima) {
+           //     this.alturaAtual = this.alturaMinima;
+           // }
             System.out.println("Dobrei!");
-        }
+        //}
     }
 
+    // MENOS É MAIS !!!!
     public void desdobrar() {
-        if (isDobrado()){
+        //if (isDobrado()){
             this.dobrado = false;
-            this.alturaAtual = this.alturaMaxima;
+            // this.alturaAtual = this.alturaMaxima;
             System.out.println("Desdobrei!");
-        }
-    }
-
-    public boolean prontoParaGuardar() {
-        if (this.alturaAtual == this.alturaMinima && this.dobrado) {
-            return true;
-        } else {
-            return false;
-        }
+        //}
     }
 
     public void guardar(){
         if (prontoParaGuardar()){
             System.out.println("Guardei!");
         } else {
-            System.out.println("Dobra, imbecil!");
+            System.out.println("Primeiro dobra, imbecil!");
         }
     }
 
-    public boolean prontoParaUsar(){
-        if (!isDobrado() && alturaAtual > (alturaMaxima/2)){
+    public boolean prontoParaGuardar() {
+        if (this.alturaAtual == this.alturaMinima && this.dobrado) {
             return true;
         } else {
             return false;
@@ -94,5 +101,12 @@ public class Tripe {
         }
     }
 
+    public boolean prontoParaUsar(){
+        if (!this.dobrado && alturaAtual > (alturaMaxima/2)){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }

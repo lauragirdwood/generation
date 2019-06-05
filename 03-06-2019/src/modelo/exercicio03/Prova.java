@@ -24,10 +24,10 @@ public class Prova {
     //métodos
     public boolean podeRealizar(Atleta atleta) {
         if (atleta.getNivel() >= this.dificuldade && atleta.getEnergia() >= this.energiaNecessaria) {
-            System.out.println("Pode realizar");
+            System.out.println(atleta.getNome()+" pode realizar a prova! Nível atual do atleta: "+atleta.getNivel());
             return true;
         } else {
-            System.out.println("Não pode realizar");
+            System.out.println(atleta.getNome()+" não pode realizar a prova! Nível atual do atleta: "+atleta.getNivel());
             return false;
         }
     }
