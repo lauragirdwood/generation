@@ -16,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/exercicio03/Exercicio03.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="454">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/modelo/exercicio03/Prova.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#148#149#0" expanded="true" />
                 <element signature="e#182#183#0" expanded="true" />
@@ -115,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -622,7 +622,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/exercicio03/Exercicio03.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -653,7 +653,7 @@
     <entry file="file://$PROJECT_DIR$/src/modelo/exercicio03/Prova.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#148#149#0" expanded="true" />
             <element signature="e#182#183#0" expanded="true" />
