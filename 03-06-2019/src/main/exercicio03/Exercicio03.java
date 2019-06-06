@@ -18,6 +18,7 @@ public class Exercicio03 {
         fofao.setEnergia(9);
         fofao.setNivel(8);
 
+        //Criando provas
         Prova ciclismo = new Prova(5, 10);
         Prova salto = new Prova(9,9);
         Prova corrida = new Prova(20, 30);
