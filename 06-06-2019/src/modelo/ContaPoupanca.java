@@ -28,9 +28,15 @@ public class ContaPoupanca extends Conta {
     }
 
     @Override
-    public void sacar(double valor) {
-        this.setSaldo(getSaldo() - valor);
-        System.out.println(getSaldo() + " " + valor);
+    public double sacar(double valor) {
+        this.setSaldo(this.getSaldo() - valor);
+        return this.getSaldo();
+        /*if(valor <= this.getSaldo()) {
+            this.setSaldo(getSaldo() - valor);
+            System.out.println(getSaldo() + " " + valor);
+        } else {
+            System.out.println("Vc não tem saldo pra fazer esse saque, animal!");
+        }*/
     }
 
     @Override

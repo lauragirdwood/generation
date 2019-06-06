@@ -32,7 +32,7 @@ public abstract class Conta {
 
     public abstract void depositar(double valor);
 
-    public abstract void sacar(double valor);
+    public abstract double sacar(double valor);
 
     public abstract double consultarSaldo();
 

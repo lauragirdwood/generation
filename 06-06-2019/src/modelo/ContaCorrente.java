@@ -28,14 +28,21 @@ public class ContaCorrente extends Conta {
         System.out.println(getSaldo() + " " + valor);
     }
 
+    public void depositar(Cheque cheque) {
+        this.setSaldo(getSaldo() + cheque.getValor());
+    }
+
     @Override
-    public void sacar(double valor) {
-        this.setSaldo(getSaldo() - valor);
-        System.out.println(getSaldo() + " " + valor);
+    public double sacar(double valor) {
+        if (valor > this.getSaldo() && valor <= this.getSaldo() + this.getLimiteChequeEspecial()) {
+            return getSaldo() - valor;
+        } else {
+        return getSaldo() - valor;
+        }
     }
 
     @Override
     public double consultarSaldo() {
-        return this.getSaldo();
+        return this.getSaldo() + this.getLimiteChequeEspecial();
     }
 }
