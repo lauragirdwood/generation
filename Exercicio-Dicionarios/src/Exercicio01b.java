@@ -9,8 +9,19 @@ public class Exercicio01b {
         apelidosJoao.add("Juan");
         apelidosJoao.add("Fissura");
         apelidosJoao.add("Maromba");
-
         apelidos.put("João", apelidosJoao);
+
+        List<String> apelidosMiguel = new ArrayList<>();
+        apelidosMiguel.add("Juan");
+        apelidosMiguel.add("Fissura");
+        apelidosMiguel.add("Maromba");
+        apelidos.put("João", apelidosMiguel);
+
+        List<String> apelidosMaria = new ArrayList<>();
+        apelidosMaria.add("Juan");
+        apelidosMaria.add("Fissura");
+        apelidosMaria.add("Maromba");
+        apelidos.put("João", apelidosMaria);
 
         apelidos.put("Miguel", Collections.singletonList("Night Watch, Bruce Wayne, Tampinha"));
         apelidos.put("Maria", Collections.singletonList("Wonder Woman, Mary, Marilene"));
