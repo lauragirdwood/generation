@@ -1,5 +1,4 @@
 # Generation
-Bootcamp de Desenvolvimento Full Stack Java
 
 * [O que é Generation?](#o-que-é-generation)
 * [O que eu aprendi nesse curso?](#o-que-eu-aprendi-nesse-curso)
