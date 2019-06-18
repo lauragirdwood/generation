@@ -1,0 +1,44 @@
+
+body{
+	background-color: #bcf2fc;
+	width: 960px;
+	margin: 0 auto;
+}
+li{
+	list-style-type: none;
+	display: inline-block;
+}
+ul{
+	width: 960px;
+	background-color: #f00;
+	padding: 0;
+}
+.c_images{
+	margin: 0 auto;
+	width: 960px;
+	background-color: #fff;
+}
+.wrapImages{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+
+}
+img{
+	margin: 10px;
+}
+
+div.conteiner{
+	position: relative;
+	z-index: 1
+
+}
+img.detalhes{
+	position: absolute;
+	top: 0;
+	margin: 0;
+	width: auto;
+	height: 100px
+}
+

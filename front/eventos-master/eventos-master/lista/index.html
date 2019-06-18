@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos</title>
+</head>
+<body>
+    <!--#01 Criar a página html-->
+    <h1>Lista de Exercícios aula 08 - Eventos</h1>
+
+    <!--#02 Add botão Cumprimentar + onclick-->
+    <button id="ola">Cumprimentar</button>
+    
+    <!--#03 Add botão muda cor de fundo + onclick-->
+    <button id="vermelho">Alterar Fundo 1</button>
+    <button id="branco">Alterar Fundo 2</button>
+
+    <!--#04 Add imagem + mouseover-->
+    <img src="images/digital.PNG" alt="logo Digital House" id="logo">
+
+    <!--#05 Add imagem + onclick-->
+    <img src="images/generation.PNG" alt="logo Generation" id="gen">
+
+    <!--#08 Add form com submit e action  -->
+    <form action="https://www.google.com.br">
+        <p>Eu sou um form</p>
+        <input type="submit">
+    </form>
+
+    <script>
+     // #02 Add botão Cumprimentar + onclick-->
+     let btnOla = document.getElementById("ola");
+     btnOla.onclick = function() {
+        alert("olá!");   
+     }
+
+     // #03 Add botão muda cor de fundo + onclick
+     var corpo = document.querySelector("body");
+     let btnCor = document.getElementById("vermelho");
+     let btnCor2 = document.getElementById("branco");
+     
+     btnCor.onclick = function() {
+        corpo.style.backgroundColor = "red"; 
+     }
+     btnCor2.onclick = function() {
+        corpo.style.backgroundColor = "white"; 
+     }
+
+     // #04 Add imagem + mouseover
+    let logotipo = document.querySelector("#logo");
+    
+    logotipo.onmouseover = function() {
+        console.log("estou vendo a imagem");
+    }
+
+    // #05 Add imagem + onclick
+    let generation = document.querySelector("#gen");
+    
+    generation.addEventListener("click", function(){
+        console.log("estou clicando na imagem"); 
+    });
+
+    // #06 Add onclick no body muda cor de fundo pra vermelho
+    corpo.addEventListener("click", function() {
+        if (this.style.backgroundColor == "red"){
+            this.style.backgroundColor = "white"; 
+        } else {
+            this.style.backgroundColor = "red";
+        }   
+    });
+
+    // #07 Remove onlick no body
+    corpo.removeEventListener("click", function() {
+        if (this.style.backgroundColor == "red"){
+            this.style.backgroundColor = "white"; 
+        } else {
+            this.style.backgroundColor = "red";
+        }   
+    });
+    // #08 Add form com submit com action
+    document.querySelector("form").addEventListener("click", function(event){
+        event.preventDefault();
+        alert("Não é possível enviar")
+    });
+
+    // #09 Add event listener mouse X Y
+    generation.addEventListener("click", function(event){
+        console.log(event.clientX);
+        console.log(event.clientY); 
+    });
+
+
+    </script>
+    
+</body>
+</html>

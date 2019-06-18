@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Validação de Formulário</h1>
+    <!--#01a e #01b Validação dos campos do form-->
+    <form action="#" name="formulario" method="get" onsubmit="return validaFormulario(this);">
+
+        <label for="nome">Digite seu nome </label>
+        <p><input type="text" name="nome" placeholder="Digite seu nome" value=""></p>
+        
+        <label for="idade">Digite sua idade </label>
+        <p><input type="number" name="idade" value="" placeholder="Digite sua idade"></p>
+        
+        <label for="senha">Digite sua senha </label>
+        <p><input type="password" name="senha" value=""></p> 
+        
+        <label for="senha02">Digite novamente a sua senha </label>
+        <p><input type="password" name="senha02" value=""></p>
+
+        <button>Enviar</button>
+    </form>
+
+    <!--#02 pegar conteudo enviado pelo form e armazenar numa string via js-->
+    <form id="form1" onsubmit="getFormvalue(this)" method="post">
+        <label for="nome1">Primeiro nome:</label>
+            <p><input type="text" name="nome1" value="" id="nome1" required></p>
+        <label for="sobrenome">Sobrenome:</label>        
+            <p><input type="text" name="sobrenome" value="" id="sobrenome" required></p>
+        <!-- #03c. Adicionar um checkbox para usuário recerb notícias do site -->        
+            <input type="checkbox" name="atualizado" id="atualizado">
+        <label for="atualizado">Mantenha-me informado! </label>
+        <br><br>
+
+            <input type="radio" name="genero" id="feminino" value="feminino" onchange="mudaCor()">
+        <label for="feminino">feminino </label>
+            <input type="radio" name="genero" id="masculino" value="masculino" onchange="mudaCor()">
+        <label for="masculino">masculino</label>
+            <input type="radio" name="genero" id="outros" value="outros" onchange="outrosEspecifique()">
+        <label for="outros">outros</label>
+            <input type="text" name="especifique" id="especifique" style="display: none">
+        <label for="especifique"></label>
+        <br>
+        <button type="reset">Redefinir</button>
+        <button type="submit">Enviar</button>
+        <button type="button" id="ocultar">Ocultar</button>
+    </form>
+
+   
+
+    <script src="asssets/js/script.js"></script>
+</body>
+</html>

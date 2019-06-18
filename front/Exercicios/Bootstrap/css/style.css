@@ -1,0 +1,86 @@
+.selector-for-some-widget {
+	box-sizing: content-box;
+}
+
+body {
+	background-image: url(../images/bg-body.png);
+}
+
+img#logo {
+	border-radius: 100%;
+	border: solid 2px black;
+	display: block;
+	margin: 20px auto;
+}
+
+li {
+	list-style: none;
+}
+
+header nav li div {
+	list-style: none;
+	background-color: #b42221;
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+}
+
+ul,
+.normal {
+	padding: 0;
+}
+
+.button {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	border: none;
+	width: 30%;
+}
+
+#banner img,
+.caixa img {
+	width: 100%;
+}
+
+.caixa {
+	margin: 10px 0;
+	position: relative;
+}
+
+button.ampliar{
+	position: absolute;
+	width: 100%;
+	bottom: 10%;
+	background-color: rgba(0, 0, 0, .5);
+	border: none;
+	color: #fff
+}
+
+img.free {
+	width: 30%;
+	position: absolute;
+	right: 0;
+}
+
+footer .container {
+	background-color: red;
+	border-radius: 20px 20px 0 0;
+	text-align: center;
+	color: #fff;
+	height: 100%;
+	padding-top: 25px;
+}
+
+footer ul.row {
+	font-size: 0.9em;
+	display: block;
+}
+
+#produtos {
+	margin-top: 20px;
+}
+
+p {
+	max-height: 100px;
+	overflow-y: auto
+}

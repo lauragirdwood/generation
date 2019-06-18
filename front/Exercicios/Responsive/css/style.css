@@ -1,0 +1,96 @@
+* {}
+
+body {}
+
+header {
+	width: 100vw;
+	height: 20vh;
+	background-color: #001970;
+
+}
+
+.container {
+	border: solid 1px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+}
+
+
+.caixa-a {
+	width: 20.8%;
+	background-color: #bbdefb;
+	border: solid 1px;
+}
+
+.caixa-b {
+	width: 66.6%;
+	background-color: #f9f9f9;
+	border: solid 1px;
+	margin: 0 2.1%;
+}
+
+.caixa-c {
+	width: 8%;
+	background-color: #c2185b;
+	border: solid 1px;
+
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+p {
+	font-size: .81em;
+}
+
+strong {
+	font-size: .93em;
+}
+
+@media only screen and (max-width: 900px) {
+	.container {
+		padding: 20px;
+		width: 95%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.caixa-a {
+		width: 40%;
+		justify-content: flex-start;
+	}
+
+	.caixa-b {
+		width: 55%;
+		margin: 0;
+	}
+
+	.caixa-c {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 1.3em;
+	}
+
+	.container {
+		flex-flow: column nowrap;
+		width: 100%;
+		display: flex;
+		padding: 0%
+	}
+
+	.caixa-a,
+	.caixa-b,
+	.caixa-c {
+		width: 100%;
+	}
+	p,h2{
+		padding: 0% 5%;
+		text-align: justify;
+	}
+}

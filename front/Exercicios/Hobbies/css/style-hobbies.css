@@ -1,0 +1,120 @@
+body {
+	font-family: 'open sans', sans-serif;
+	width: 720px;
+	box-sizing: content-box;
+	background-image: url(../imgs/floor-tile.png);
+	background-attachment: fixed;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: center;
+	background-color: rgba(0,101,112,0.8);
+	color: #fff;
+}
+.destaque{
+	background-color: #21006d;
+	color: #fff;
+	padding: 5px;
+	text-align: justify;
+	font-size: 22px;
+}
+
+ul{
+	margin: 0 auto;
+	position: relative;
+	padding: 0;
+}
+
+li,
+img:hover {
+	border-radius: 200px;
+}
+
+li,
+li:hover {
+	height: auto;
+	display: inline-block;
+}
+
+li:hover,
+img:hover {
+	background-color: #21006d;
+}
+
+img:hover {
+	opacity: 0.5;
+	transition: 1s ease;
+}
+
+img {
+	width: 360px;
+}
+
+/*---------------------*/
+nav.top {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+aside {
+	float: left;
+}
+
+aside.B li {
+	display: block;
+	padding: 30px;
+	border-radius: 0;
+	background-color: #21006d;
+}
+
+footer,
+header {
+	width: 650px;
+}
+
+header,
+aside,
+main,
+footer,
+article,
+article.audio {
+	padding: 30px;
+	border: dashed 5px #dedede;
+	box-sizing: content-box;
+	margin: 10px 0
+}
+
+main {
+	width: 360px;
+	/*	background-color: orangered;*/
+	float: right;
+}
+
+footer.D {
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+}
+audio{
+	width: 360px;
+}
+article{
+	clear: both;
+	margin: 0 auto;
+}
+article video, article audio{
+	display: flex;
+	align-content: center;
+	margin: 0 auto;
+}
+
+h3{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}

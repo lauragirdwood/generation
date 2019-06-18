@@ -1,0 +1,85 @@
+/* * {
+    padding: 0;
+} */
+
+
+body {
+    background-attachment: fixed;
+    background-image: url("../images/bg-body.png")
+}
+
+#logo {    
+    border: solid 2px black;
+    border-radius: 50%;
+    margin: 1em auto; /*1em auto = 1em top e bottom e auto left right*/
+    display: block;
+}
+
+/*utility: classe que vai resolver uns problemas clássicos*/
+/* .centro {
+    display: flex;
+    justify-content: center;
+}  */
+
+
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li div {
+    background-color:#444;
+    color: white;
+    padding: 10px 0; /*line-height: 250%*/
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+#banner img {
+    width: 100%;
+}
+
+.caixa img {
+   padding: 20px 0; 
+   width: 100%;
+}
+
+.caixa button {
+    background-color:#444;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: lowercase;
+}
+
+footer .container {
+    background-color: #b92519;
+    border-radius: 20px 20px 0 0;
+    height: 60px;
+    margin-top: 20px;
+}
+
+footer .container nav ul { 
+    line-height: 60px;
+    list-style-type: none;
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer nav ul li a {
+    border-right: solid white 2px;
+    color: white;
+    padding-right: 5px;
+    text-decoration: none;    
+}
+
+footer li {
+    display: inline-block; 
+}
+
+
+

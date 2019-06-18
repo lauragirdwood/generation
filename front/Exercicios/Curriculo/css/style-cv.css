@@ -1,0 +1,60 @@
+* {
+	font-family: open sans, sans-serif;
+	font-size: 1em;
+}
+
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-style: italic;
+	text-align: center;
+}
+
+li,
+p {
+	text-align: justify;
+	line-height: 1.9em;
+}
+
+.contatos,
+.formacaoAcademica,
+.xpProfissional,
+header {
+	width: 890px;
+	border: dashed 5px #dedede;
+	margin: 20px 0;
+	padding: 30px
+
+}
+mark{
+	background-color: #dedeff;
+}
+
+#contatos img{
+	height: 20px;
+	width: auto;
+	margin: 5px 5px -5px 0px;
+}
+
+
+
+/*
+.contatos {
+	background-color: red;
+}
+
+.formacaoAcademica {
+	background-color: pink;
+}
+
+.xpProfissional {
+	background-color: orangered;
+}
+
+header {
+	background-color: gray;
+}
+*/

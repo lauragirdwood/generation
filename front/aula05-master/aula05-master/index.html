@@ -1,0 +1,151 @@
+<!--
+    Generation Full Stack  
+    Aula05 - 16/05/2019
+    Objetivo: Replicar layout Projeto Kitchening https://drive.google.com/file/d/1m2b0OsvYjUW0cWCpqunW_TSdd6xLwjHY/view
+    Laura Girdwood
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Bootstrap Kitchening</title>
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <!-- Logo -->
+          <div class="row">
+            <div class="col-lg-12 centro"> <!--flex item da row-->
+               <img id="logo" src="images/logo.jpg" alt="logo kitchening">
+            </div>
+          </div>
+          <!-- Menu-->
+          <nav> <!-- tag nav por padrão é row -->
+            <ul class="row"> <!-- tag ul não é padrão row, por isso reajustamos -->
+              <li class="col-lg-2 col-md-2">
+                <div>home</div>
+              </li> 
+              <li class="col-lg-2 col-md-2">
+                <div>quem somos</div>
+              </li>
+              <li class="col-lg-2 col-md-2">
+                <div>serviços</div>
+              </li>
+              <li class="col-lg-2 col-md-2">
+                <div>portifólio</div>
+              </li>
+              <li class="col-lg-2 col-md-2">
+                <div>
+                  filiais
+                </div>
+              </li>
+              <li class="col-lg-2 col-md-2">
+                <div>contato</div>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </header>
+      
+      <section class="container"> <!--eu sou importante pro google entender que sou uma seção com conteudo e n uma simples div-->
+        <!--Banner-->
+        <section id="banner">
+          <img src="images/img-banner.jpg">
+        </section>
+
+        <!--Produtos-->       
+        <section id="produtos" class="mt-4"> <!--margin top 4 (1 a 5)-->
+          <div class="row">  <!--Como estão no mesmo contexto, faz sentido estarem em uma linha só-->
+            <div class="col-md-4">
+              <div class="caixa">
+                <img src="images/img-pdto-1.jpg">
+                <h2>Título</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla impedit natus molestias tenetur ducimus beatae, dolores, adipisci placeat officia veritatis qui quod voluptate numquam pariatur! Placeat debitis pariatur ad labore.</p>
+                <button>Ver Mais</button>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="caixa">
+                  <img src="images/img-pdto-2.jpg">
+                  <h2>Título</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla impedit natus molestias tenetur ducimus beatae, dolores, adipisci placeat officia veritatis qui quod voluptate numquam pariatur! Placeat debitis pariatur ad labore.</p>
+                  <button>Ver Mais</button>
+                </div>
+              </div>
+
+            <div class="col-md-4">
+                <div class="caixa">
+                  <img src="images/img-pdto-3.jpg">
+                  <h2>Título</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla impedit natus molestias tenetur ducimus beatae, dolores, adipisci placeat officia veritatis qui quod voluptate numquam pariatur! Placeat debitis pariatur ad labore.</p>
+                  <button>Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="caixa">
+                  <img src="images/img-pdto-2.jpg">
+                  <h2>Título</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla impedit natus molestias tenetur ducimus beatae, dolores, adipisci placeat officia veritatis qui quod voluptate numquam pariatur! Placeat debitis pariatur ad labore.</p>
+                  <button>Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="caixa">
+                  <img src="images/img-pdto-3.jpg">
+                  <h2>Título</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla impedit natus molestias tenetur ducimus beatae, dolores, adipisci placeat officia veritatis qui quod voluptate numquam pariatur! Placeat debitis pariatur ad labore.</p>
+                  <button>Ver Mais</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="caixa">
+                  <img src="images/img-pdto-1.jpg">
+                  <h2>Título</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla impedit natus molestias tenetur ducimus beatae, dolores, adipisci placeat officia veritatis qui quod voluptate numquam pariatur! Placeat debitis pariatur ad labore.</p>
+                  <button>Ver Mais</button>
+                </div>
+            </div>        
+          </div>        
+        </section>
+      </section>
+
+      <!--Rodapé-->
+      <footer>
+        <div class="container">
+            <nav> 
+              <ul> 
+                <li>
+                  <a href="#">home</a>
+                </li> 
+                <li>
+                  <a href="#">quem somos</a>
+                </li>
+                <li>
+                  <a href="#">serviços</a>
+                </li>
+                <li>
+                  <a href="#">portifólio</a>
+                </li>
+                <li>
+                  <a href="#">filiais</a>
+                </li>
+                <li>
+                  <a href="#">contato</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </footer>
+
+    </body>
+</html> 

@@ -1,0 +1,118 @@
+* {
+	font-family: open sans, sans-serif;
+}
+button{
+	border: none;
+}
+button.logIn {
+	background-color: rgb(67, 82, 89);
+	color: #fff;
+	float: right;
+}
+
+button.logIn:active {
+	background-color: rgba(67, 82, 89, 0.5);
+}
+
+.signUp,
+button.getStarted {
+	background-color: rgb(42, 176, 137);
+	color: #fff;
+}
+
+button.getStarted {
+	height: 50px;
+}
+
+button.getStarted:active,
+.topButtons .signUp:active {
+	background-color: rgba(50, 205, 161, 0.5);
+}
+
+.email,
+.password,
+.nomeCompleto,
+button.getStarted,
+div.getStarted{
+	width: 380px;
+}
+
+.topButtons {
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.topButtons button {
+	width: 190px;
+	height: 40px;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+input,
+.formulario {
+	background-color: rgb(36, 50, 60);
+}
+
+input,
+label,
+::placeholder {
+	color: rgb(83, 96, 105);
+	font-size: 12px;
+}
+
+input {
+	border: 1px solid rgb(83, 96, 105);
+}
+
+.formulario {
+	width: 400px;
+	height: 390px;
+	padding: 10px;
+	margin: 30px auto;
+}
+
+h3 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+
+.nomeCompleto .firstName {
+	float: left;
+	margin: 15px auto;
+}
+
+.nomeCompleto .lastName {
+	float: right;
+	margin: 15px auto;
+}
+
+.nomeCompleto input {
+	width: 180px;
+	padding: 3px 0px 4px 3px;
+}
+
+.email,
+.password,
+.nomeCompleto,
+button.getStarted,
+div button.getStarted,
+div.getStarted{
+	margin: 15px auto;
+	clear: both;
+}
+
+.email input,
+.password input {
+	width: 375px;
+	padding: 3px 0px 4px 3px;
+}
+input:focus{
+	background-color: aliceblue
+}
+.firstName input, .lastName input{
+	text-transform: capitalize;
+}

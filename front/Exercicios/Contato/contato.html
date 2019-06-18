@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato</title>
+		<link rel="stylesheet" href="css/style-contato.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<nav class="top">
+			<ul>
+				<a href="index.html" ><li class="menuTop">Home</li></a>
+				<a href="cv.html"><li class="menuTop">Meu Curriculo</li></a>
+				<a href="hobbies.html"><li class="menuTop">Meus Hobbies</li></a>
+				<a href="contato.html"><li class="menuTop">Meu contato</li></a>
+			</ul>
+		</nav
+		
+		<header>
+			<h1>Formulário de Contato</h1>
+		</header>
+		<main>
+			<ul type="none" class="dados">
+				<li>
+					<label for="nome"><span>Nome</span></label>
+				</li>
+				<li>
+					<input type="text" name="nome" placeholder="Nome">
+				</li>
+				<li>
+					<label for="sobrenome"><span>Sobrenome</span></label>
+				</li>
+				<li>
+					<input type="text" name="sobrenome" placeholder="Sobrenome">
+				</li>
+				<li>
+					<label for="email"><span>Email</span></label>
+				</li>
+				<li>
+					<input type="email">
+				</li>
+				<li>
+					<label for="assunto">Assunto</label>
+				</li>
+				<li>
+					<select name="assunto" id="assunto">
+						<option value="--">--</option>
+						<option value="Lorem">Lorem</option>
+						<option value="Ut">Ut</option>
+						<option value="Dolor">Dolor</option>
+						<option value="Molestiae">Molestiae</option>
+						<option value="Iusto">Iusto</option>
+					</select>
+				</li>
+			</ul>
+			
+			<div class="checkBox">
+				<ul type="none">
+					<li>
+						<input type="checkbox" name="hobbies" value="A">
+						<label for="A">A</label>
+					</li>
+					<li>
+						<input type="checkbox" name="hobbies" value="B">
+						<label for="B">B</label>
+					</li>
+					<li>
+						<input type="checkbox" name="hobbies" value="C">
+						<label for="C">C</label>
+					</li>
+					<li>
+						<input type="checkbox" name="hobbies" value="D">
+						<label for="D">D</label>
+					</li>
+					<li>
+						<input type="checkbox" name="hobbies" value="E">
+						<label for="E">E</label>
+					</li>
+				</ul>
+				<ul type="none">
+					<li>
+						<input type="radio" name="genero" id="masculino" value="masculino">
+						<label for="masculino">Masculino</label>
+					</li>
+					<li>
+						<input type="radio" name="genero" id="feminino" value="feminino">
+						<label for="feminino">Feminino</label>
+					</li>
+					<li>
+						<input type="radio" name="genero" id="outro" value="outro">
+						<label for="prefiro não responder">Prefiro não responder</label>
+					</li>
+				</ul>
+			</div>
+			<label for="comentarios">Comentários</label>
+			<textarea name="comentarios"></textarea>
+			<div class="actionButtons">
+				<div>
+					<button>enviar</button>
+					<button>excluir</button>
+				</div>
+			</div>
+		</main>
+	</body></html>

@@ -1,0 +1,68 @@
+html {
+	font-family: opensans, sans-serif;
+	background-color: #d9f53e;
+}
+ul, .dados li, ul li label{
+	padding-left: 0;
+	color: #d9f53e;
+	margin-bottom: 10px;
+}
+header,main, .checkBox, select{
+	width: 400px;
+	margin: 0 auto;
+}
+h1{
+	text-align: center;
+	padding: 20px;
+	color: #21006d;
+
+}
+.actionButtons div button:active, header,.dados input, select, .actionButtons div button:hover, .dados input:focus, select:focus, textarea:active, .actionButtons div button{
+	background-color: #d9f53e;
+}
+main{
+	padding: 30px;
+	background-color: #21006d;
+}
+textarea{
+	width: 395px;
+	resize: vertical;
+	background-color: hsl(258, 100%, 40%);
+	color: #d9f53e;
+}
+.dados input, select{
+	width: 395px;
+	background-color: hsl(258, 100%, 40%);
+	border: none;
+	height: 30px;
+	border-radius: 0px;
+}
+
+.dados input:focus, select:focus, textarea:active{
+	width: 395px;
+	border: solid 0.01em;
+	height: 30px;
+	color: #21006d;
+}
+
+.actionButtons div{
+	margin: 20px auto;
+	width: 205px;
+}
+
+.actionButtons div button{
+	height: 40px;
+	width: 100px;
+	margin: 0 auto
+}
+.actionButtons div button:hover{
+	background-color: #21006d;
+	color: #d9f53e;
+}
+.actionButtons div button:active{
+	color: #21006d;
+	background-color: #d9f53e;
+}
+
+
+
