@@ -1,5 +1,5 @@
 # Generation
-Bootcamp que participei para adquirir formação na carreira de Desenvolvedora Full Stack Java Júnior.
+Bootcamp de Desenvolvimento Full Stack Java
 
 * [O que é esse repositório?](#o-que-é-esse-repositório)
 * [O que eu aprendi nesse curso?](#o-que-eu-aprendi-nesse-curso)
