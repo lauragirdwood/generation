@@ -12,6 +12,6 @@ Muitas `soft skills`, de verdade.
 Comunicação, Persistência, Responsabilidade Pessoal, Atenção aos Detalhes, Orientação para o Futuro, Mentalidade de Crescimento, Trabalho em Equipe e Proatividade são as mentalidades e habilidades abordadas ao longo do Programa Generation.
 Na parte técnica foram abordados conhecimentos básicos de Front-End, Back-End e Banco de Dados.
 
-## O que eu vou encontrar nesse repositório?
+## O que você vai encontrar nesse repositório?
 Todos os exercícios que realizei durante esses 3 meses de curso. Você vai encontrar os códigos dos exercícios organizados em ordem cronológica e por assunto. 
 
