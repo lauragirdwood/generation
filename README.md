@@ -1,4 +1,5 @@
 # Generation
+Curso tipo bootcamp para formação e iniciação à carreira de Desenvolvedora Full Stack Java Júnior.
 
 * [O que é esse repositório?](#o-que-é-esse-repositório)
 * [O que eu aprendi nesse curso?](#o-que-eu-aprendi-nesse-curso)
