@@ -11,5 +11,5 @@ O Programa [Generation](https://brazil.generation.org/) faz parte de um braço s
 Foram abordados conhecimentos básicos de Front-End, Back-End e Banco de Dados. 
 
 ## O que você vai encontrar neste repositório?
-Aqui estão os códigos dos exercícios que realizei durante esses 3 meses de curso organizados por ordem cronológica e por assunto. 
+Aqui estão os códigos dos exercícios que fiz durante esses 3 meses de curso organizados por ordem cronológica e por assunto. 
 
