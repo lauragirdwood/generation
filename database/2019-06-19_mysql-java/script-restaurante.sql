@@ -1,6 +1,6 @@
 -- CREATE DATABASE restaurante;
 -- SHOW DATABASES;
--- USE restaurante;
+USE restaurante;
 
 /*
 CREATE TABLE cliente (
@@ -21,3 +21,5 @@ VALUES (2, "Maria");
 
 SELECT * FROM cliente;
 */
+
+SELECT * FROM cliente;
