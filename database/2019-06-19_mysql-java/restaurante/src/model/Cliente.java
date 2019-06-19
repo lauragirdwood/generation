@@ -2,15 +2,15 @@ package model;
 
 public class Cliente {
 
-    private Integer idCliente;
+    private Integer id;
     private String nome;
 
-    public Integer getIdCliente() {
-        return idCliente;
+    public Integer getId() {
+        return id;
     }
 
-    public void setIdCliente(Integer idCliente) {
-        this.idCliente = idCliente;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -19,5 +19,13 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                '}';
     }
 }

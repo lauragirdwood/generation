@@ -15,13 +15,14 @@ public class ClienteDAO {
             this.connection = new ConnectionFactory().getConnection();
         }
 
-        public void adicionacliente(Cliente cliente) {
+        // CREATE
+        public void adiciona (Cliente cliente) {
             try {
                 String sql = "INSERT INTO cliente (id_cliente, nome) VALUES (?, ?)";
 
                 PreparedStatement stmt = this.connection.prepareStatement(sql);
 
-                stmt.setInt(1, cliente.getIdCliente());
+                stmt.setInt(1, cliente.getId());
                 stmt.setString(2, cliente.getNome());
 
                 stmt.execute();
@@ -29,9 +30,9 @@ public class ClienteDAO {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-
         }
 
+        // READ
         public List<Cliente> lista(){
             try{
                 List<Cliente> clientes = new ArrayList<>();
@@ -40,7 +41,7 @@ public class ClienteDAO {
 
                 while (rs.next()) {
                     Cliente cliente = new Cliente();
-                    cliente.setIdCliente(rs.getInt("id_cliente"));
+                    cliente.setId(rs.getInt("id_cliente"));
                     cliente.setNome((rs.getString("nome")));
                     clientes.add(cliente);
                 }
