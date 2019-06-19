@@ -52,5 +52,25 @@ public class ClienteDAO {
                throw new RuntimeException(e);
             }
         }
+
+        // UPDATE
+        public void altera (Cliente cliente) {
+            try {
+                String sql = "UPDATE cliente SET nome=? WHERE id_cliente=?";
+
+                PreparedStatement stmt = this.connection.prepareStatement(sql);
+
+                stmt.setString(1, cliente.getNome());
+                stmt.setInt(2, cliente.getId());
+
+                stmt.execute();
+                stmt.close();
+
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        
 }
 

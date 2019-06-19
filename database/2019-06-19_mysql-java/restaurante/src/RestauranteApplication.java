@@ -9,11 +9,11 @@ public class RestauranteApplication {
 
         ClienteDAO clienteDAO = new ClienteDAO();
 
-        Cliente laura = new Cliente();
-        laura.setId(5);
-        laura.setNome("Laura");
+        Cliente joana = new Cliente();
+        joana.setId(6);
+        joana.setNome("Joana");
 
-        clienteDAO.adiciona(laura);
+        clienteDAO.adiciona(joana);
 
         System.out.println(clienteDAO.lista());
 
