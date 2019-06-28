@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 public class Cliente {
 
     @Id // eh o do Java Persistence pq se for o do Spring dá pau
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //@GeneratedValue para auto increment -- qual estratégia de auto increment do mysql? Identity
     private Long id;
 
     @NotNull

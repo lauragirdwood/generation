@@ -1,3 +1,4 @@
+CREATE DATABASE gfood;
 USE gfood;
 
 CREATE TABLE produto (

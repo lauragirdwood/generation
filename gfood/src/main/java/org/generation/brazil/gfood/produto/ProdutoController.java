@@ -11,14 +11,14 @@ import java.util.List;
 public class ProdutoController {
 
     @Autowired
-    private ProdutoRepository repository;
+    private ProdutoRepository produtoRepository;
 
     // CREATE (C DO CRUD) -- POST do HTTP
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/produtos")
     public Produto save(@RequestBody Produto produto) {
         // 'INSERT INTO produto ...'
-        return repository.save(produto);
+        return produtoRepository.save(produto);
     }
 
 
@@ -26,7 +26,7 @@ public class ProdutoController {
     @GetMapping("/produtos")
     public List<Produto> findAll(){
         // 'SELECT * FROM produto'
-        return repository.findAll();
+        return produtoRepository.findAll();
     }
 
     // UPDATE (U DO CRUD) -- PUT do HTTP
@@ -34,13 +34,16 @@ public class ProdutoController {
     public Produto update(@PathVariable Long id, @RequestBody Produto produto)
             throws ResourceNotFoundException {
         // 'UPDATE produto SET ... WHERE ...'
-        return repository.findById(id).map(produtoAtualizado -> {
+        return produtoRepository.findById(id).map(produtoAtualizado -> {
             produtoAtualizado.setNome(produto.getNome());
             produtoAtualizado.setDescricao(produto.getDescricao());
-            return repository.save(produtoAtualizado);
+            return produtoRepository.save(produtoAtualizado);
         }).orElseThrow(() ->
                 new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
     }
+
+    // DELETE (D DO CRUD) -- DELETE do HTTP
+
 
 
 }
