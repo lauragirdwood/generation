@@ -1,43 +1,27 @@
 package org.generation.brazil.gfood.cliente;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import lombok.Data;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+//import java.sql.Date;
+import java.time.LocalDate;
+
+@Data
 @Entity
 public class Cliente {
 
     @Id // eh o do Java Persistence pq se for o do Spring dá pau
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //@GeneratedValue para auto increment -- qual estratégia de auto increment do mysql? Identity
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue para auto increment -- qual estratégia de auto increment do mysql? Identity
     private Long id;
 
     @NotNull
     private String nome;
     private String endereco;
 
-    public Long getId() {
-        return id;
-    }
+    @NotNull
+    @Column(name = "data_nascimento")
+    private LocalDate dataNascimento;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
 }

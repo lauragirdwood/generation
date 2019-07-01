@@ -21,7 +21,6 @@ public class ProdutoController {
         return produtoRepository.save(produto);
     }
 
-
     // READ (R DO CRUD) -- GET do HTTP
     @GetMapping("/produtos")
     public List<Produto> findAll(){
@@ -37,12 +36,17 @@ public class ProdutoController {
         return produtoRepository.findById(id).map(produtoAtualizado -> {
             produtoAtualizado.setNome(produto.getNome());
             produtoAtualizado.setDescricao(produto.getDescricao());
+            produtoAtualizado.setPreco(produto.getPreco());
             return produtoRepository.save(produtoAtualizado);
         }).orElseThrow(() ->
                 new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
     }
 
-    // DELETE (D DO CRUD) -- DELETE do HTTP
+    // DELETE (D DO CRUD)
+    @DeleteMapping("/produtos/{id}")
+    public void delete(@PathVariable Long id){
+        produtoRepository.deleteById(id);
+    }
 
 
 

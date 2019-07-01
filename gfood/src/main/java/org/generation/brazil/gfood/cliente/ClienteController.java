@@ -75,6 +75,7 @@ public class ClienteController {
         return repository.findById(id).map(clienteAtualizado -> {
             clienteAtualizado.setNome(cliente.getNome());
             clienteAtualizado.setEndereco(cliente.getEndereco());
+            clienteAtualizado.setDataNascimento(cliente.getDataNascimento());
             return repository.save(clienteAtualizado);
         }).orElseThrow(() ->
         new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
