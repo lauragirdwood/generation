@@ -1,6 +1,7 @@
 package org.generation.brazil.gfood.cliente;
 
 //import org.springframework.stereotype.Controller;
+
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,77 +16,84 @@ import java.util.Optional;
 @RestController
 public class ClienteController {
 
-    /*
-    Alguns testes
+  /*
+  Alguns testes
 
-    //@ResponseBody
-    //@RequestMapping("/index")  //antigo
-    @GetMapping("/index") //novo
-    public String index() {
-        return "Uma mensagem de teste!";
-    }
+  //@ResponseBody
+  //@RequestMapping("/index")  //antigo
+  @GetMapping("/index") //novo
+  public String index() {
+      return "Uma mensagem de teste!";
+  }
 
-    @PostMapping("/post") //novo
-    public String post() {
-        return "Não dá pra fazer pelo navegador!";
-    }
-    */
-    //
-    @Autowired // vai injetar a dependência que eu preciso pra rodar o programa
-    private ClienteRepository repository;
+  @PostMapping("/post") //novo
+  public String post() {
+      return "Não dá pra fazer pelo navegador!";
+  }
+  */
+  //
+  @Autowired // vai injetar a dependência que eu preciso pra rodar o programa
+  private ClienteRepository clienteRepository;
 
-    // CREATE (C DO CRUD) -- POST do HTTP
-    @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping("/clientes")
-    public Cliente save(@RequestBody Cliente cliente) {
-        // 'INSERT INTO cliente ...'
-        return repository.save(cliente);
-    }
+  // CREATE (C DO CRUD) -- POST do HTTP
+  @ResponseStatus(HttpStatus.CREATED)
+  @PostMapping("/clientes")
+  public Cliente save(@RequestBody Cliente cliente) {
+    // 'INSERT INTO cliente ...'
+    return clienteRepository.save(cliente);
+  }
 
-    // READ (R DO CRUD) -- GET do HTTP
-    @GetMapping("/clientes")
-    public List<Cliente> findAll(){
-        // 'SELECT * FROM cliente'
-        return repository.findAll();
-    }
+  // READ (R DO CRUD) -- GET do HTTP
+  @GetMapping("/clientes")
+  public List<Cliente> findAll() {
+    // 'SELECT * FROM cliente'
+    return clienteRepository.findAll();
+  }
 
-    // UPDATE (U DO CRUD) -- PUT do HTTP
+  // READ (R DO CRUD) -- GET do HTTP pegando por id
+  @GetMapping("/clientes/{id}")
+  public Optional<Cliente> findById(@PathVariable Long id) {
+    // 'SELECT * FROM cliente WHERE id = '
+    return clienteRepository.findById(id);
+  }
+
+  // UPDATE (U DO CRUD) -- PUT do HTTP
     /*@PutMapping("/clientes/{id}")
     public Cliente saveOrUpdate(@PathVariable Long id, @RequestBody Cliente cliente){
         // Optional é uma abstração para facilitar o manuseio de um objeto, no caso, um cliente
-        //Optional<Cliente> optionalCliente = repository.findById(id);
+        //Optional<Cliente> optionalCliente = clienteRepository.findById(id);
         // mapear o conteúdo de cliente para o Option
 
         // EXPRESSÕES LAMBDAS
-        return repository.findById(id).map(c -> {
+        return clienteRepository.findById(id).map(c -> {
             c.setNome(cliente.getNome());
             c.setEndereco(cliente.getEndereco());
-            return repository.save(c);
+            return clienteRepository.save(c);
         }).orElseGet(() -> {
             cliente.setId(id);
-            return repository.save(cliente);
+            return clienteRepository.save(cliente);
         });
     }*/
 
-    // UPDATE (U DO CRUD) -- PUT do HTTP
-    @PutMapping("/clientes/{id}")
-    public Cliente update(@PathVariable Long id, @RequestBody Cliente cliente)
-            throws ResourceNotFoundException {
-        // 'UPDATE cliente SET ... WHERE ...'
-        return repository.findById(id).map(clienteAtualizado -> {
-            clienteAtualizado.setNome(cliente.getNome());
-            clienteAtualizado.setEndereco(cliente.getEndereco());
-            clienteAtualizado.setDataNascimento(cliente.getDataNascimento());
-            return repository.save(clienteAtualizado);
-        }).orElseThrow(() ->
+  // UPDATE (U DO CRUD) -- PUT do HTTP
+  @PutMapping("/clientes/{id}")
+  public Cliente update(@PathVariable Long id, @RequestBody Cliente cliente)
+      throws ResourceNotFoundException {
+    // 'UPDATE cliente SET ... WHERE ...'
+    return clienteRepository.findById(id).map(clienteAtualizado -> {
+      clienteAtualizado.setNome(cliente.getNome());
+      clienteAtualizado.setEndereco(cliente.getEndereco());
+      clienteAtualizado.setDataNascimento(cliente.getDataNascimento());
+      return clienteRepository.save(clienteAtualizado);
+    }).orElseThrow(() ->
         new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
-    }
+  }
 
-    // DELETE (D DO CRUD)
-    @DeleteMapping("/clientes/{id}")
-    public void delete(@PathVariable Long id){
-        repository.deleteById(id);
-    }
+  // DELETE (D DO CRUD)
+  @DeleteMapping("/clientes/{id}")
+  public void delete(@PathVariable Long id) {
+    clienteRepository.deleteById(id);
+  }
 
 
 }

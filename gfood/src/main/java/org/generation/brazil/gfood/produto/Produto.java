@@ -9,23 +9,23 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
-//@AllArgsConstructor
-//@NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
 public class Produto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @NotNull
-    private String nome;
-    private String descricao;
+  @NotNull
+  private String nome;
+  private String descricao;
 
-    //@Getter
-    //@Setter
-    @NotNull
-    private BigDecimal preco;
+  //@Getter
+  //@Setter
+  @NotNull
+  private BigDecimal preco;
 
 }

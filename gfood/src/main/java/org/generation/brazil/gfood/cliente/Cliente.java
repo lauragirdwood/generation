@@ -11,17 +11,17 @@ import java.time.LocalDate;
 @Entity
 public class Cliente {
 
-    @Id // eh o do Java Persistence pq se for o do Spring dá pau
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@GeneratedValue para auto increment -- qual estratégia de auto increment do mysql? Identity
-    private Long id;
+  @Id // eh o do Java Persistence pq se for o do Spring dá pau
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  //@GeneratedValue para auto increment -- qual estratégia de auto increment do mysql? Identity
+  private Long id;
 
-    @NotNull
-    private String nome;
-    private String endereco;
+  @NotNull
+  private String nome;
+  private String endereco;
 
-    @NotNull
-    @Column(name = "data_nascimento")
-    private LocalDate dataNascimento;
+  @NotNull
+  @Column(name = "data_nascimento")
+  private LocalDate dataNascimento;
 
 }
