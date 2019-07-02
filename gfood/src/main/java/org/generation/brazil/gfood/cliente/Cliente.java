@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 //import java.sql.Date;
+import java.sql.Date;
 import java.time.LocalDate;
 
 @Data
@@ -22,6 +23,6 @@ public class Cliente {
 
   @NotNull
   @Column(name = "data_nascimento")
-  private LocalDate dataNascimento;
+  private Date dataNascimento;
 
 }
