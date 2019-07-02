@@ -32,10 +32,16 @@ public class ProdutoController {
   // READ (R DO CRUD) -- GET do HTTP pegando por id
   @GetMapping("/produtos/{id}")
   public Optional<Produto> findById(@PathVariable Long id) {
-    // 'SELECT * FROM produto WHERE id = '
+    // 'SELECT * FROM cliente WHERE id = '
     return produtoRepository.findById(id);
   }
 
+  // READ (R DO CRUD) -- GET do HTTP buscando por nome
+  @GetMapping("/produtos/'{nome}'")
+  public List<Produto> findByNome(@PathVariable String nome) {
+    // 'SELECT * FROM cliente WHERE nome = '
+    return produtoRepository.findByNome(nome);
+  }
   // UPDATE (U DO CRUD) -- PUT do HTTP
   @PutMapping("/produtos/{id}")
   public Produto update(@PathVariable Long id, @RequestBody Produto produto)
@@ -55,6 +61,5 @@ public class ProdutoController {
   public void delete(@PathVariable Long id) {
     produtoRepository.deleteById(id);
   }
-
 
 }

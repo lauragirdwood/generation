@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 //import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -56,6 +57,22 @@ public class ClienteController {
     // 'SELECT * FROM cliente WHERE id = '
     return clienteRepository.findById(id);
   }
+
+  // READ (R DO CRUD) -- POST do HTTP buscando por nome (pra não passar na url)
+  @PostMapping("/clientes/nome")
+  public Cliente findByNome(@RequestParam String nome) {
+    // 'SELECT * FROM cliente WHERE nome = '
+    return clienteRepository.findByNome(nome);
+  }
+
+  // READ (R DO CRUD) -- GET do HTTP buscando por data de nascimento
+  @GetMapping("/clientes/dataNascimento/'{dataNascimento}'")
+  public List<Cliente> findByDataNascimento(@PathVariable LocalDate dataNascimento) {
+    // 'SELECT * FROM cliente WHERE data_nascimento = '
+    return clienteRepository.findByDataNascimento(dataNascimento);
+  }
+
+
 
   // UPDATE (U DO CRUD) -- PUT do HTTP
     /*@PutMapping("/clientes/{id}")
