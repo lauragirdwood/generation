@@ -1,8 +1,10 @@
 package org.generation.brazil.gfood.produto;
 
+import java.math.BigDecimal;
 import java.util.Optional;
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,9 +41,41 @@ public class ProdutoController {
   // READ (R DO CRUD) -- GET do HTTP buscando por nome
   @GetMapping("/produtos/'{nome}'")
   public List<Produto> findByNome(@PathVariable String nome) {
-    // 'SELECT * FROM cliente WHERE nome = '
+    // 'SELECT * FROM produto WHERE nome = '
     return produtoRepository.findByNome(nome);
   }
+
+
+  // READ (R DO CRUD) -- POST do HTTP por preço
+  @PostMapping("/produtos/preco")
+  public List<Produto> findByPreco(@RequestParam BigDecimal preco) {
+    // 'SELECT * FROM produto WHERE preco = '
+    return produtoRepository.findByPreco(preco);
+  }
+
+  // READ (R DO CRUD) -- POST do HTTP  por menor preço
+  @PostMapping("/produtos/menorPreco")
+  public List<Produto> findByPrecoLessThan(@RequestParam BigDecimal preco) {
+    // 'SELECT * FROM produto WHERE preco < THAN = '
+    return produtoRepository.findByPrecoLessThan(preco);
+  }
+
+  // READ (R DO CRUD) -- POST do HTTP  por maior preço
+  @PostMapping("/produtos/maiorPreco")
+  public List<Produto> findByPrecoGreaterThan(@RequestParam BigDecimal preco) {
+    // 'SELECT * FROM produto WHERE preco > THAN = '
+    return produtoRepository.findByPrecoGreaterThan(preco);
+  }
+
+
+  // READ (R DO CRUD) -- POST do HTTP por preço entre dois valores
+  @PostMapping("/produtos/precoEntre")
+  public List<Produto> findByPrecoBetween(@RequestParam BigDecimal preco1, @RequestParam BigDecimal preco2) {
+    // 'SELECT * FROM produto WHERE preco LESS THAN = '
+    return produtoRepository.findByPrecoBetween(preco1, preco2);
+  }
+
+
   // UPDATE (U DO CRUD) -- PUT do HTTP
   @PutMapping("/produtos/{id}")
   public Produto update(@PathVariable Long id, @RequestBody Produto produto)

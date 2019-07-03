@@ -1,5 +1,6 @@
 package org.generation.brazil.gfood.cliente;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -8,8 +9,9 @@ import javax.validation.constraints.NotNull;
 import java.sql.Date;
 import java.time.LocalDate;
 
-@Data
+
 @Entity
+@Data
 public class Cliente {
 
   @Id // eh o do Java Persistence pq se for o do Spring dá pau
@@ -23,6 +25,6 @@ public class Cliente {
 
   @NotNull
   @Column(name = "data_nascimento")
-  private Date dataNascimento;
+  private LocalDate dataNascimento;
 
 }

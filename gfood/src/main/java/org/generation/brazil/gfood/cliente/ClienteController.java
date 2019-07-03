@@ -1,12 +1,14 @@
 package org.generation.brazil.gfood.cliente;
 
-//import org.springframework.stereotype.Controller;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
+import org.springframework.stereotype.Controller;
 
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-//import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -14,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 //@Controller
-//@ResponseBody
+@ResponseBody
 @RestController
 public class ClienteController {
 
@@ -60,19 +62,39 @@ public class ClienteController {
   }
 
   // READ (R DO CRUD) -- POST do HTTP buscando por nome (pra não passar na url)
-  @PostMapping("/clientes/nome")
+  @PostMapping("/clientes/filter") // ?nome=Felipe Coala
   public List<Cliente> findByNome(@RequestParam String nome) {
     // 'SELECT * FROM cliente WHERE nome = '
     return clienteRepository.findByNome(nome);
   }
 
-  // READ (R DO CRUD) -- GET do HTTP buscando por data de nascimento
-  @PostMapping("/clientes/dataNascimento")
-  public List<Cliente> findByDataNascimento(@RequestParam Date dataNascimento) {
-    // 'SELECT * FROM cliente WHERE data_nascimento = '
+  // READ (R DO CRUD) -- POST do HTTP buscando por nome (pra não passar na url)
+//  @PostMapping("/clientes/nome")
+//  public List<Cliente> findByFirstnameContaining(@RequestParam String nome) {
+//    // 'SELECT * FROM cliente WHERE nome = '
+//    return clienteRepository.findByFirstnameContaining(nome);
+//  }
+
+  // READ (R DO CRUD) -- POST do HTTP buscando por data de nascimento
+//  @PostMapping("/clientes/filter/data-nascimento")
+//  public List<Cliente> findByDataNascimento(@RequestParam @DateTimeFormat(iso = ISO.DATE) LocalDate dataNascimento) {
+//    // 'SELECT * FROM cliente WHERE data_nascimento = '
+//    return clienteRepository.findByDataNascimento(dataNascimento);
+//  }
+
+  @GetMapping("/clientes/filter/data-nascimento") // ?data-nascimento=1989-12-20
+  public List<Cliente> findByDataNascimento(@RequestParam(value = "data-nascimento") @DateTimeFormat(iso = ISO.DATE) LocalDate dataNascimento) {
+     // 'SELECT * FROM cliente WHERE data_nascimento = '
     return clienteRepository.findByDataNascimento(dataNascimento);
   }
 
+
+  // READ (R DO CRUD) -- POST do HTTP buscando por nome e data de nascimento
+  @PostMapping("/clientes/nomeAndNasc")
+  public List<Cliente> findByNomeAndDataNascimento(@RequestParam String nome, @RequestParam LocalDate dataNascimento) {
+    // 'SELECT * FROM cliente WHERE nome = AND data_nascimento = '
+    return clienteRepository.findByNomeAndDataNascimento(nome, dataNascimento);
+  }
 
 
   // UPDATE (U DO CRUD) -- PUT do HTTP
@@ -94,18 +116,30 @@ public class ClienteController {
     }*/
 
   // UPDATE (U DO CRUD) -- PUT do HTTP
-  @PutMapping("/clientes/{id}")
-  public Cliente update(@PathVariable Long id, @RequestBody Cliente cliente)
+  @PutMapping("/clientes/{id}/nome")
+  public Cliente updateClienteByNome(@PathVariable Long id, @RequestParam String nome)
       throws ResourceNotFoundException {
     // 'UPDATE cliente SET ... WHERE ...'
     return clienteRepository.findById(id).map(clienteAtualizado -> {
-      clienteAtualizado.setNome(cliente.getNome());
-      clienteAtualizado.setEndereco(cliente.getEndereco());
-      clienteAtualizado.setDataNascimento(cliente.getDataNascimento());
+      clienteAtualizado.setNome(nome);
       return clienteRepository.save(clienteAtualizado);
     }).orElseThrow(() ->
         new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
   }
+
+  // UPDATE (U DO CRUD) -- PUT do HTTP
+//  @PutMapping("/clientes/{id}")
+//  public Cliente update(@PathVariable Long id, @RequestBody Cliente cliente)
+//          throws ResourceNotFoundException {
+//    // 'UPDATE cliente SET ... WHERE ...'
+//    return clienteRepository.findById(id).map(clienteAtualizado -> {
+//      clienteAtualizado.setNome(cliente.getNome());
+//      clienteAtualizado.setEndereco(cliente.getEndereco());
+//      clienteAtualizado.setDataNascimento(cliente.getDataNascimento());
+//      return clienteRepository.save(clienteAtualizado);
+//    }).orElseThrow(() ->
+//            new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
+//  }
 
   // DELETE (D DO CRUD)
   @DeleteMapping("/clientes/{id}")

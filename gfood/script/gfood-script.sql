@@ -84,3 +84,8 @@ UPDATE produto
 SET preco = 6.99
 WHERE id = 2;
 
+SELECT * FROM produto;
+
+INSERT INTO produto(nome, descricao, preco)
+VALUES ('esfiha', 'queijo', 7.87),
+       ('pizza', 'quatro queijos', 30.00);
