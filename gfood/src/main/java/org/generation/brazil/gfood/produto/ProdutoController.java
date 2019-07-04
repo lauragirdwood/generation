@@ -1,6 +1,7 @@
 package org.generation.brazil.gfood.produto;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Optional;
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,6 +76,17 @@ public class ProdutoController {
     return produtoRepository.findByPrecoBetween(preco1, preco2);
   }
 
+  // UPDATE (U DO CRUD) -- PUT do HTTP
+  @PutMapping("/produtos/altera-preco/{id}")
+  public Produto updateProduto(@PathVariable Long id, @RequestParam BigDecimal preco)
+      throws ResourceNotFoundException {
+    // 'UPDATE cliente SET ... WHERE ...'
+    return produtoRepository.findById(id).map(produtoAtualizado -> {
+      produtoAtualizado.setPreco(preco);
+      return produtoRepository.save(produtoAtualizado);
+    }).orElseThrow(() ->
+        new ResourceNotFoundException("Não existe produto cadastrado com o id: " + id));
+  }
 
   // UPDATE (U DO CRUD) -- PUT do HTTP
   @PutMapping("/produtos/{id}")
@@ -95,5 +107,6 @@ public class ProdutoController {
   public void delete(@PathVariable Long id) {
     produtoRepository.deleteById(id);
   }
+
 
 }

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -115,8 +116,20 @@ public class ClienteController {
         });
     }*/
 
-  // UPDATE (U DO CRUD) -- PUT do HTTP
-  @PutMapping("/clientes/{id}/nome")
+
+  @PatchMapping("/clientes/altera/{id}")
+  public Optional<Cliente> updateNomeById(@PathVariable Long id, @RequestParam String nome){
+    clienteRepository.updateNomeById(nome, id);
+    return clienteRepository.findById(id);
+  }
+
+  public ClienteRepository getClienteRepository() {
+    return clienteRepository;
+  }
+// @transactional
+   //  UPDATE (U DO CRUD) -- PUT do HTTP
+  /* // Ver o uso do PatchMapping (atualiza parcialmente)
+  @PutMapping("/clientes/altera/{id}")
   public Cliente updateClienteByNome(@PathVariable Long id, @RequestParam String nome)
       throws ResourceNotFoundException {
     // 'UPDATE cliente SET ... WHERE ...'
@@ -125,26 +138,34 @@ public class ClienteController {
       return clienteRepository.save(clienteAtualizado);
     }).orElseThrow(() ->
         new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
-  }
+  }*/
 
-  // UPDATE (U DO CRUD) -- PUT do HTTP
-//  @PutMapping("/clientes/{id}")
-//  public Cliente update(@PathVariable Long id, @RequestBody Cliente cliente)
-//          throws ResourceNotFoundException {
-//    // 'UPDATE cliente SET ... WHERE ...'
-//    return clienteRepository.findById(id).map(clienteAtualizado -> {
-//      clienteAtualizado.setNome(cliente.getNome());
-//      clienteAtualizado.setEndereco(cliente.getEndereco());
-//      clienteAtualizado.setDataNascimento(cliente.getDataNascimento());
-//      return clienteRepository.save(clienteAtualizado);
-//    }).orElseThrow(() ->
-//            new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
-//  }
+   //UPDATE (U DO CRUD) -- PUT do HTTP
+  @PutMapping("/clientes/{id}")
+  public Cliente update(@PathVariable Long id, @RequestBody Cliente cliente)
+          throws ResourceNotFoundException {
+    // 'UPDATE cliente SET ... WHERE ...'
+    return clienteRepository.findById(id).map(clienteAtualizado -> {
+      clienteAtualizado.setNome(cliente.getNome());
+      clienteAtualizado.setEndereco(cliente.getEndereco());
+      clienteAtualizado.setDataNascimento(cliente.getDataNascimento());
+      return clienteRepository.save(clienteAtualizado);
+    }).orElseThrow(() ->
+            new ResourceNotFoundException("Não existe cliente cadastrado com o id: " + id));
+  }
 
   // DELETE (D DO CRUD)
   @DeleteMapping("/clientes/{id}")
   public void delete(@PathVariable Long id) {
     clienteRepository.deleteById(id);
+  }
+
+  // DELETE (D DO CRUD)
+  @DeleteMapping("/clientes/delete-by")
+  public void deleteByDataNascimentoAndNome(@RequestParam @DateTimeFormat(iso = ISO.DATE) LocalDate dataNascimento,
+      @RequestParam String nome) {
+    // "DELETE FROM cliente WHERE data_nascimento = ... AND nome = ..."
+    clienteRepository.deleteByDataNascimentoAndNome(dataNascimento, nome);
   }
 
 
